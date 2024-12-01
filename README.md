@@ -4,8 +4,6 @@
 
 # About
 
-Link do APK no MediFire: https://www.mediafire.com/file/6q5osbfdb1pxkrz/app-debug.apk/file
-
 Este aplicativo foi desenvolvido como projeto de conclusão de curso do de Engenharia de Software na Faculdade Cruzeiro do Sul.
 
 O aplicativo consiste em simular uma loja de Cupcake e todo o seu fluxo de pedido.
