@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.dmribeiro87.cupcakeapp.ui.home.HomeFragment"
+        android:label="Loja"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/action_nav_home_to_detailsFragment"
+            app:destination="@id/nav_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_details"
+        android:name="com.dmribeiro87.cupcakeapp.ui.details.DetailsFragment"
+        android:label="Detalhes"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="selectedCupcake"
+            app:argType="com.dmribeiro87.model.Cupcake" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.dmribeiro87.cupcakeapp.ui.cart.CartFragment"
+        android:label="Carrinho"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_nav_cart_to_vav_adress"
+            app:destination="@id/nav_adress" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_adress"
+        android:name="com.dmribeiro87.cupcakeapp.ui.address.AddressFragment"
+        android:label="Endereço"
+        tools:layout="@layout/fragment_adress" >
+
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_adress_to_pixPaymentFragment"
+            app:destination="@id/nav_pix_payment" />
+        <action
+            android:id="@+id/action_nav_adress_to_nav_card_payment"
+            app:destination="@id/nav_card_payment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pix_payment"
+        android:name="com.dmribeiro87.cupcakeapp.ui.payment.PixPaymentFragment"
+        android:label="Pix"
+        tools:layout="@layout/fragment_pix_payment" >
+        <action
+            android:id="@+id/action_nav_pix_payment_to_nav_success"
+            app:destination="@id/nav_success" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_card_payment"
+        android:name="com.dmribeiro87.cupcakeapp.ui.payment.CardFragment"
+        android:label="Cartão"
+        tools:layout="@layout/fragment_card" >
+        <action
+            android:id="@+id/action_nav_card_payment_to_nav_success"
+            app:destination="@id/nav_success" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_success"
+        android:name="com.dmribeiro87.cupcakeapp.ui.success.SuccessFragment"
+        android:label="Sucesso"
+        tools:layout="@layout/fragment_success" />
+
+</navigation>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "735970197786",
+    "project_id": "cupcakeapp-ec00f",
+    "storage_bucket": "cupcakeapp-ec00f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735970197786:android:f14c45fdadf30e8f3d6ca3",
+        "android_client_info": {
+          "package_name": "com.dmribeiro87.cupcakeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAOEu1VRBhuY2TZ5Zgh9gMEHcFYnxKxCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

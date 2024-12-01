@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.dmribeiro87.cupcakeapp-mergeDebugResources-52:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/diegoribeiro/.gradle/caches/transforms-3/d2bdd953c50ae4af80b4bde9ea7906bb/transformed/appcompat-1.6.1/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}
